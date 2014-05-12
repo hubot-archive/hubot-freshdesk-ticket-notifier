@@ -1,0 +1,41 @@
+{
+  "name": "hubot-freshdesk-ticket-notifier",
+  "description": "A hubot script for tracking any webhook events from the Freskdesk support tool",
+  "version": "0.0.0",
+  "author": "Patrick Connolly <patrick.c.connolly@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "hubot",
+    "hubot-scripts",
+    "support",
+    "freshdesk",
+    "helpdesk",
+    "notifier",
+    "tickets"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hubot-scripts/hubot-freshdesk-ticket-notifier.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hubot-scripts/hubot-freshdesk-ticket-notifier/issues"
+  },
+  "dependencies": {
+    "coffee-script": "~1.6",
+    "mustache": "^0.8.1"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "chai": "*",
+    "sinon-chai": "*",
+    "sinon": "*",
+    "grunt-mocha-test": "~0.7.0",
+    "grunt-release": "~0.6.0",
+    "matchdep": "~0.1.2",
+    "grunt-contrib-watch": "~0.5.3"
+  },
+  "main": "index.coffee",
+  "scripts": {
+    "test": "grunt test"
+  }
+}
