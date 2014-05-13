@@ -54,13 +54,13 @@ module.exports = (robot) ->
     # Augment the data object
     data.action = req.params.action.replace(/-_/g, " ")
     data.ticket_priority_stars = switch data.ticket_priority
-      when /low/i
+      when "Low"
         "☆☆☆"
-      when /medium/i
+      when "Medium"
         "★☆☆"
-      when /high/i
+      when "High"
         "★★☆"
-      when /urgent/i
+      when "Urgent"
         "★★★"
       else
         console.log "No ticket_priority available in webhook payload. Add it via the Freshdesk UI."
