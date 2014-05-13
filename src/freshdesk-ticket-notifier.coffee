@@ -52,7 +52,7 @@ module.exports = (robot) ->
     data = req.body.freshdesk_webhook
 
     # Augment the data object
-    data.action = req.params.action.replace(/-_/g, " ")
+    data.action = req.params.action.replace(/[-_]/g, " ")
     data.ticket_priority_stars = switch data.ticket_priority
       when "Low"    then "☆☆☆"
       when "Medium" then "★☆☆"
