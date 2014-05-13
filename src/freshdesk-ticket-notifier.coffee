@@ -54,17 +54,13 @@ module.exports = (robot) ->
     # Augment the data object
     data.action = req.params.action.replace(/-_/g, " ")
     data.ticket_priority_stars = switch data.ticket_priority
-      when "Low"
-        "☆☆☆"
-      when "Medium"
-        "★☆☆"
-      when "High"
-        "★★☆"
-      when "Urgent"
-        "★★★"
+      when "Low"    then "☆☆☆"
+      when "Medium" then "★☆☆"
+      when "High"   then "★★☆"
+      when "Urgent" then "★★★"
       else
         console.log "No ticket_priority available in webhook payload. Add it via the Freshdesk UI."
-        "Priority N/A"
+        "N/A"
 
     message = Mustache.render template, data
 
