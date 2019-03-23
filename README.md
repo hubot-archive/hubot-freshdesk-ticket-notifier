@@ -19,6 +19,5 @@ Then add **hubot-freshdesk-ticket-notifier** to your `external-scripts.json`:
 ## Sample Interaction
 
 ```
-user1>> hubot hello
-hubot>> hello!
+hubot>> [Freshdesk] #123 (★★☆) - Ticket created. http://example.freshdesk.com/tickets/123
 ```
